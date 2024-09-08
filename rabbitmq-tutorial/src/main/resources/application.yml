@@ -1,0 +1,18 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+rabbitmq:
+    queue:
+      name: thentrees
+      json:
+        name: thentrees_json
+
+    exchange:
+      name: thentrees_exchange
+    routing:
+      json:
+        key: "thentrees_routing_json_key"
+      key: "thentrees_routing_key"
